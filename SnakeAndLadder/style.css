@@ -1,0 +1,105 @@
+/* Game Heading */
+.heading {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3em;
+    color: black;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c);
+    background-size: 600% 600%;
+    animation: bgAnimation 20s ease infinite;
+    font-family: sans-serif;
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Game Board */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+    border: 4px solid #333;
+    background-color: #fff;
+}
+
+/* Each Cell */
+.cell {
+    box-sizing: border-box;
+    width: 10%;
+    padding: 15px;
+    border: 1px solid;
+    text-align: center;
+    position: relative;
+}
+
+/* Player Buttons */
+.btn {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+/* Superscript player name styling */
+.btn sup {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: scale(1.5);
+    background-color: #fffae6;
+    border-color: #222;
+}
+
+/* Position buttons on 4 sides */
+.btn:nth-child(1) { /* Top */
+    top: -600px;
+    left: -20%;
+    transform: translateX(-50%);
+}
+.btn:nth-child(2) { /* Right */
+    top: -570px;
+    right: -150px;
+    transform: translateY(-50%);
+}
+.btn:nth-child(3) { /* Bottom */
+    bottom: 100px;
+    right: -220px;
+    transform: translateX(-50%);
+}
+.btn:nth-child(4) { /* Left */
+    bottom: 75px;
+    left: -240px;
+    transform: translateY(-50%);
+}
+.buttons {
+    position: relative;
+    width: 600px;
+    height: 0;
+    margin: 0 auto;
+}
+
+/* Player token */
+.person {
+    padding: 30%;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}

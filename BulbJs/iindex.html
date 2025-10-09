@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb Example</title>
+  <style>
+    /* Style the image */
+    #bulbImage {
+      width: 200px;      /* resize image */
+      height: auto;      /* maintain aspect ratio */
+      border-radius: 10px; /* rounded corners */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* shadow */
+      transition: transform 0.3s ease; /* smooth animation */
+    }
+
+    /* Add hover effect */
+    #bulbImage:hover {
+      transform: scale(1.1); /* zoom on hover */
+    }
+
+    /* Optional: center everything */
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: orange;
+      color: white;
+    }
+
+    button:hover {
+      background: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img id="bulbImage" src="vecteezy_light-bulb-png-transparent_9408676.png" alt="Light Bulb">
+    <br>
+    <button onclick="turnOn()">Turn On 💡</button>
+    <button onclick="turnOff()">Turn Off ❌</button>
+  </div>
+
+  <script>
+    function turnOn() {
+      document.getElementById("bulbImage").src = "vecteezy_light-bulb-png-transparent_9408668.png";
+    }
+
+    function turnOff() {
+      document.getElementById("bulbImage").src = "vecteezy_light-bulb-png-transparent_9408676.png";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Veg Menu Order</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #menu, #order {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Veg Menu Ordering System</h2>
+
+  <button onclick="showVegMenu()">Veg</button>
+
+  <div id="menu"></div>
+
+  <h3>Your Order:</h3>
+  <div id="order"></div>
+
+  <script>
+    // Step 1: Initial veg menu
+    const vegMenu = ['Paneer Butter Masala', 'Aloo Gobi', 'Palak Paneer', 'Dal Tadka', 'Chole Bhature'];
+
+    // Step 2: Ordered items array
+    let orderedItems = [];
+
+    // Function to show veg menu using spread operator
+    function showVegMenu() {
+      const menuDiv = document.getElementById('menu');
+      menuDiv.innerHTML = ''; // clear previous buttons
+
+      // Using spread operator to create buttons
+      const itemsToShow = [...vegMenu];  // Spread operator here
+      itemsToShow.forEach(item => {
+        const btn = document.createElement('button');
+        btn.innerText = item;
+        btn.onclick = () => addToOrder(item);
+        menuDiv.appendChild(btn);
+      });
+    }
+
+    // Function using rest parameter to add selected item(s) to the order
+    function addToOrder(...items) {
+      orderedItems.push(...items); // Rest parameter collects, and spread pushes
+      updateOrderDisplay();
+    }
+
+    // Display the ordered items
+    function updateOrderDisplay() {
+      const orderDiv = document.getElementById('order');
+      orderDiv.innerHTML = orderedItems.length > 0 
+        ? orderedItems.map(item => `<div>${item}</div>`).join('')
+        : 'No items ordered yet.';
+    }
+  </script>
+
+</body>
+</html>

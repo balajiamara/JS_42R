@@ -1,0 +1,46 @@
+html,body{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+img{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+h1{
+    color: white;
+    margin-left: 20px;
+}
+#user_input{
+    margin-top: 0px;
+    width: 150px;
+    height: 20px;
+    margin-left: 120px;
+    font-size:large;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(253, 61, 2);
+}
+button{
+    margin-left: 10px;
+    padding: 10px;
+    font-size:large;
+    border-radius: 10px;
+    border: 2px solid rgb(253, 61, 2);
+}
+#container{
+    background-color: rgb(249, 137, 52);
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+}
+#msg{
+    color: rgb(10, 0, 0);
+    margin-left: 30px;
+    margin-bottom: 500px;
+    font-size: x-large;
+    font-weight: 800;
+}

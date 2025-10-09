@@ -1,0 +1,56 @@
+body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: #e4a4a4;
+        padding-top: 50px;
+}
+#contain{
+    margin-left:550px ;
+    width: 380px;
+    height:380px;
+    border-radius: 50px;
+    background-color: rgb(0,0,0);
+    box-shadow: 0 10px 10px rgba(241, 229, 7, 0.3);
+}
+h1{
+    padding-top: 30px;
+    color: antiquewhite;
+}
+.coin {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
+    margin: 20px auto;
+}
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+.heads {
+    background: url('GeminiH_Generated_Image_fufysofufysofufy-removebg-preview.png') no-repeat center/cover; /* Heads image */
+}
+.tails {
+    background: url('GeminiT_Generated_Image_y9jop7y9jop7y9jo-removebg-preview.png') no-repeat center/cover; /* Tails image */
+    transform: rotateY(180deg);
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 20px;
+}

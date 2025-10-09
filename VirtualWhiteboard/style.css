@@ -1,0 +1,30 @@
+body { 
+    margin:0; 
+    font-family:Arial,sans-serif; 
+    background:#f1f5f9; 
+}
+#toolbar {
+    background:#334155; 
+    color:#fff; 
+    padding:10px;
+    display:flex; 
+    align-items:center; 
+    gap:10px;
+}
+#toolbar button, #toolbar input {
+    padding:5px 10px; 
+    cursor:pointer; 
+    border:none; 
+    border-radius:4px;
+}
+#toolbar input[type=color] { 
+    padding:0; 
+    width:40px; 
+    height:30px; 
+}
+#board { 
+    border:2px solid #334155; 
+    display:block; 
+    margin:10px auto; 
+    background:#fff; 
+}

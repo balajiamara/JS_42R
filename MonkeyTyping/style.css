@@ -1,0 +1,108 @@
+/* body{
+    background-color: black;
+}
+h1{
+    color: whitesmoke;
+    margin-left: 630px;
+    margin-top: 150px;
+}
+#sentence{
+    font-size: x-large;
+    margin-top: 4%;
+    margin-left: 440px;
+    padding: 50px;
+    border: 2px solid rgb(252, 227, 2);
+    border-radius: 20px;
+    width: 480px;
+    height: 120px;
+    background-color: rgb(135, 129, 129);
+}
+#input{
+    margin-left: 620px;
+    margin-top: 50px;
+    width: 200px;
+    padding: 10px;
+    font-size: large;
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 5px;
+    background-color: rgb(245, 125, 46);
+}
+#timer{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:660px ;
+} */
+
+/* Background */
+body {
+    background-color: #0a0a0a; /* deep black */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+h1 {
+    color: #00bfff; /* skyblue */
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 15px rgba(0, 191, 255, 0.8); /* glowing effect */
+}
+
+/* Sentence box */
+#sentence {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px;
+    width: 500px;
+    min-height: 120px;
+
+    border: 2px solid #1e90ff; /* royal blue */
+    border-radius: 15px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark gradient */
+    color: white;
+
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 0.7);
+    transition: transform 0.2s ease-in-out;
+}
+#sentence:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px rgba(0, 191, 255, 0.9);
+}
+
+/* Input field */
+#input {
+    display: block;
+    margin: 20px auto;
+    width: 280px;
+    padding: 12px;
+    font-size: 1.1rem;
+
+    border: 2px solid #00bfff;
+    border-radius: 8px;
+    outline: none;
+
+    background: #111;
+    color: #00bfff;
+
+    box-shadow: 0px 0px 15px rgba(0, 191, 255, 0.5);
+    transition: 0.3s ease;
+}
+#input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 0.8);
+    background: #000;
+}
+#input:hover {
+    transform: scale(1.05);
+}
+
+/* Timer display */
+#timer {
+    color: #87cefa; /* light skyblue */
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0px 0px 10px rgba(135, 206, 250, 0.9);
+}
