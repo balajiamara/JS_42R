@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #f7f7fb
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px
+}
+
+.view {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 8px auto
+}
+
+.hidden {
+    display: none
+}
+
+.card {
+    border: 1px solid #e0e0e8;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px
+}
+
+input,
+textarea,
+button {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+ul {
+    list-style: none;
+    padding-left: 0
+}
+
+.chat-box {
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background: #fff
+}
+
+.message {
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 6px;
+    background: #eef
+}
+
+.btn-back {
+    background: #eee
+}
